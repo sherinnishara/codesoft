@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        <title>anime</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Manga</a></li>
+                    <li><a href="#">series</a></li>
+                    <li><a href="#">episode</a></li>
+                </ul>
+                <div>
+                    <a href="#" class="btn"><button class="button">log in / sign up</button></a>
+                </div>
+            </nav>
+            <div class="content">
+                <h1 class="anim">Watch<br>JJK Episodes</h1>
+                <p class="anim">Jujutsu Kaisen (呪術廻戦, rgh. "Sorcery Battle") is a Japanese
+                     manga series written and illustrated by Gege Akutami. It has been serialized 
+                     in Shueisha's shōnen manga magazine Weekly Shōnen Jump since March 2018, 
+                    with its chapters collected and published in 25 tankōbon volumes as of January 2024.
+                </p>
+                <a href="#" class="btn anim"><button class="button">Watch Now</button></a>
+            </div>
+            <img src="" class="feature-img anime">
+        </div>
+    </body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(bag.jpg);
+            background-position: center;
+            background-size: cover;
+            padding: 10px 10%;
+            overflow: hidden;
+            position: relative;
+        }
+        nav{
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 140px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 15px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 40px;
+            color: red;
+            background-image: inline-gradient(-60deg, white 0%, red 100% );
+            font-size: 12px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            transition: 0.5s;
+        }
+        .button {
+            background-color: red; 
+            border: none;
+            color: white;
+            padding: 9px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 20px;
+            font-size: 12px;
+            border: 2px solid red;
+            transition-duration: 0.4s;
+            box-shadow: 0px 0px 80px white;
+        }
+        .button:hover {
+            background-color: white;
+            color: red;
+        }
+        .content{
+            margin-top: 10%;
+            max-width: 600px;
+        }
+        .content h1{
+            font-size: 70px;
+            color: white;
+        }
+        .content p{
+            margin: 10px 0 30px;
+            color: white;
+        }
+        .content .btn{
+            padding: 15px 80px;
+            font-size: 16px;
+        }
+        .btn:hover{
+            border-top-right-radius:  30px;
+        }
+        .feature-img{
+            width: 530px;
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+        .anim{
+            opacity: 0;
+            transform: transLateY(30px);
+            animation: moveup 0.5s linear forwards;
+        }
+        @keyframes moveup{
+            100%{
+                opacity: 1;
+                transform: transLateY(0px);
+            }
+        }
+    </style>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
